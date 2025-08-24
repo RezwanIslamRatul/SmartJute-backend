@@ -1,0 +1,37 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Models (optional: keep only required models)
+*.h5
+*.keras
+*.ckpt
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/project settings
+.vscode/
+.idea/
+
+# Large dataset files
+*.zip
+*.tar
+*.csv
+*.pkl
+*.npz
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
