@@ -23,7 +23,7 @@ INPUT_SIZE = (122, 122)  # trained on 122x122x3
 MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATHS = {
-    "micro": os.path.join(MODEL_DIR, "ResNet152v2 (1).keras"),
+    "micro": os.path.join(MODEL_DIR, "ResNet152v2_micro.keras"),
     "phone": os.path.join(MODEL_DIR, "nasnetmobile_phone.keras"),
 }
 
@@ -156,7 +156,10 @@ async def predict(model_name: ModelName, file: UploadFile = File(...)):
             )
         )
 
-    latency = (time.time() - time.time()) * 1000.0
+    t0 = time.time()
+    preds = model.predict(img_arr, verbose=0)
+    latency = (time.time() - t0) * 1000.0
+
 
     k = min(3, n_outputs)
     topk = softmax_topk(preds, labels, k=k)
