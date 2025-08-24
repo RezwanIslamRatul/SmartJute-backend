@@ -1,7 +1,7 @@
 
 # Core ML
 tensorflow==2.15.0
-keras==3.0.5
+
 
 # FastAPI & server
 fastapi==0.111.0
