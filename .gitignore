@@ -10,22 +10,19 @@ __pycache__/
 *.pyd
 
 # Models (optional: keep only required models)
-*.h5
-
 *.ckpt
 
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
 # IDE/project settings
-.vscode/
+
 .idea/
 
 # Large dataset files
 *.zip
 *.tar
 *.csv
-*.pkl
 *.npz
 
 # Logs and temp files
