@@ -1,7 +1,16 @@
-fastapi==0.111.0
-uvicorn[standard]==0.30.1
+
+# Core ML
 tensorflow==2.15.0
+keras==3.0.5
+
+# FastAPI & server
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+
+# Utils
 numpy==1.26.4
 pillow==10.3.0
-scikit-learn==1.4.2
 python-multipart==0.0.9
+
+# Optional (if you use scikit-learn LabelBinarizer)
+scikit-learn==1.4.2
