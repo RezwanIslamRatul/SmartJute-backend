@@ -11,7 +11,7 @@ __pycache__/
 
 # Models (optional: keep only required models)
 *.h5
-*.keras
+
 *.ckpt
 
 # Jupyter notebook checkpoints
